@@ -10,7 +10,7 @@ public class RoomMain {
     public static int inputRoomNumbersToiletAndBed() {
         Scanner scanner = new Scanner(System.in);
         int number;
-        System.out.println("Nhập số phòng ngủ:");
+        System.out.println("Nhập số phòng :");
         while (true) {
             number = scanner.nextInt();
             if (number > 0 && number < 10) {
