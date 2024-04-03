@@ -20,7 +20,7 @@ public class RoomService implements Management<Room> {
     public Room findById(long id) {
         for (int i = 0; i < roomList.size(); i++) {
             if (roomList.get(i).getRoomNumber() == id) {
-                return roomList.get(i);x
+                return roomList.get(i);
             }
         }
         return null;

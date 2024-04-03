@@ -6,7 +6,6 @@ import services.RoomService;
 import java.util.Scanner;
 public class RoomMain {
     public static RoomService service = new RoomService();
-    public static Scanner scanner = new Scanner(System.in);
 
     public static int inputRoomNumbersToiletAndBed() {
         Scanner scanner = new Scanner(System.in);
