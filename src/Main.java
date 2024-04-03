@@ -10,7 +10,16 @@ public class Main {
             System.out.println("2. đăng ký");
             System.out.println("0. thoát chương trình");
 
-            int choice = sc.nextInt();
+            String input = sc.nextLine();
+            int choice = 0;
+
+            try {
+                choice = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Vui lòng nhập một số.");
+                continue;
+            }
+
         switch (choice) {
             case 1: {
                 UserMain.login();
