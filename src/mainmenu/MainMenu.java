@@ -3,26 +3,34 @@ package mainmenu;
 import java.util.Scanner;
 public class MainMenu {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         while (true) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("1. Đăng nhập");
-            System.out.println("2. Đăng kí");
-            System.out.println("0. Thoát chương trình");
-            switch (scanner.nextInt()) {
+            System.out.println("1. đăng nhập");
+            System.out.println("2. đăng ký");
+            System.out.println("0. thoát chương trình");
+
+            String input = sc.nextLine();
+            int choice;
+
+            try {
+                choice = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Vui lòng nhập một số.");
+                continue;
+            }
+
+            switch (choice) {
                 case 1: {
                     UserMain.login();
-                    break;
                 }
                 case 2: {
                     UserMain.register();
-                    break;
                 }
                 case 0: {
                     System.exit(0);
-                    break;
                 }
                 default: {
-                    System.out.println("không có lựa chọn này mời nhập lại");
+                    System.out.println("Không hợp lệ");
                 }
             }
         }
