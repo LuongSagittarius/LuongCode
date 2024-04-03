@@ -11,7 +11,7 @@ public class Main {
             System.out.println("0. thoát chương trình");
 
             String input = sc.nextLine();
-            int choice = 0;
+            int choice;
 
             try {
                 choice = Integer.parseInt(input);
