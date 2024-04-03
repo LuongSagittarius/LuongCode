@@ -10,8 +10,8 @@ public class UserService implements Management<User> {
     static {
         User user1 = new User();
         user1.setId(1);
-        user1.setUserName("khanh");
-        user1.setPassword("123");
+        user1.setUserName("luong");
+        user1.setPassword("999999999");
         user1.setRole("Admin");
         userList.add(user1);
     }
